@@ -6,9 +6,11 @@
 
 葫芦又写于2020年1月至3月。
 
-**利用[萌娘百科的API](https://zh.moegirl.org/api.php)做些有用的没用的东西。**
+利用[萌娘百科的API](https://zh.moegirl.org.cn/api.php)做些有用的没用的东西。
 
-萌娘百科®、Moegirlpedia®是注册商标。此程序仅提供API功能。有关使用萌娘百科的内容时需遵守的版权协定，请参阅[萌娘百科的版权信息](https://zh.moegirl.org/萌娘百科:版权信息)。
+**此工具集中的程序已过期，并不再提供维护。**此repository已于2020年7月存档。
+
+萌娘百科®、Moegirlpedia®是注册商标。此程序仅提供API功能。有关使用萌娘百科的内容时需遵守的版权协定，请参阅[萌娘百科的版权信息](https://zh.moegirl.org.cn/萌娘百科:版权信息)。
 
 ## 注意
 
@@ -18,7 +20,7 @@
 
 这些程序其实可以合并。只是因为我一般一次只需要使用其中一个功能，所以将它们拆分了。所以有部分程序的功能是重复或部分重复的。
 
-本程序依赖萌娘百科的API。有关API的内容，参见[萌娘百科的API帮助](https://zh.moegirl.org/api.php)。
+本程序依赖萌娘百科的API。有关API的内容，参见[萌娘百科的API帮助](https://zh.moegirl.org.cn/api.php)。
 
 在安装完成Python之后，需要额外安装`requests`包，用于网络连接。需要额外安装`openpyxl`包，用于读取和写入工作表文件。
 
@@ -91,7 +93,7 @@
 使用`moegirl_edit.py`中的替换字符串功能，替换`PAGELIST.txt`的页面中的字符串。  
 运行程序前需要在代码中输入用户名和密码。  
 注意：在正式运行程序前，请务必先做测试，并保证测试通过。  
-请优先考虑在[提问求助区](https://zh.moegirl.org/Talk:提问求助区)请求批量替换，而不是擅自对条目进行大规模修改。  
+请优先考虑在[操作请求版](https://zh.moegirl.org.cn/萌娘百科_talk:讨论版/操作请求)请求批量替换，而不是擅自对条目进行大规模修改。  
 输出例：``[替换] [√] [PID] 73446``
 
 #### `moegirl_editorrevs_txt.py`
@@ -202,22 +204,22 @@
 
 #### `moegirl_templatelist_txt.py`
 
-查找`PAGELIST.txt`中的页面使用了的，但没有被`PAGELIST.txt`收录的模板。
+查找`PAGELIST.txt`中的页面使用了的，但没有被`PAGELIST.txt`收录的模板。  
 输出例：``[用][模板] [M___] [PID] 74901 [Template] Template:Lj``
 
 #### `moegirl_templatelist_xls.py`
 
-查找`PAGELIST.xlsx`中的页面使用了的，但没有被`PAGELIST.xlsx`收录的模板。
+查找`PAGELIST.xlsx`中的页面使用了的，但没有被`PAGELIST.xlsx`收录的模板。  
 输出例：``[用][模板] [M___] [PID] 74901 [Template] Template:Lj``
 
 #### `moegirl_templateusage_txt.py`
 
-查找使用了`PAGELIST.txt`中的模板，但没有被`PAGELIST.txt`收录的页面。
+查找使用了`PAGELIST.txt`中的模板，但没有被`PAGELIST.txt`收录的页面。  
 输出例：``[模用][外] [Temp] 156827 Template:LoveLiveSongGai/SIF  [Page] 340870 伟大的决斗``
 
 #### `moegirl_userimage_xls.py`
 
-查找给定用户上传或编辑过的文件，但没有被`imagelist.xlsx`收录的页面。
+查找给定用户上传或编辑过的文件，但没有被`imagelist.xlsx`收录的页面。  
 输出例：``[用贡][新图] [User] 胡祥又 [File] 85830 File:LLhead.png``
 
 ## 其他
